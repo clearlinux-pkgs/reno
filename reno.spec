@@ -4,7 +4,7 @@
 #
 Name     : reno
 Version  : 1.1.0
-Release  : 3
+Release  : 4
 URL      : https://pypi.python.org/packages/source/r/reno/reno-1.1.0.tar.gz
 Source0  : https://pypi.python.org/packages/source/r/reno/reno-1.1.0.tar.gz
 Summary  : RElease NOtes manager
