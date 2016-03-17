@@ -1,6 +1,21 @@
 CHANGES
 =======
 
+1.6.1
+-----
+
+* handle deleted notes properly
+* refactor argument buildup to make it more reusable
+* improve test coverage
+* always show coverage report for test runs
+
+1.6.0
+-----
+
+* Add deprecations section to usage documentation
+* use less entropy in unit tests
+* collapse pre-release notes into regular releases by default
+
 1.5.0
 -----
 
