@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+1.6.2
+-----
+
+* default to collapsing pre-releases in sphinxext
+
 1.6.1
 -----
 
