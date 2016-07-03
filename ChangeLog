@@ -1,6 +1,21 @@
 CHANGES
 =======
 
+1.8.0
+-----
+
+* ignore all coverage output files
+* add warnings for malformated input
+* add API for writing the cache file
+* report extra files with warnings
+
+1.7.0
+-----
+
+* Ignore empty sections in notes
+* Clean up oslo-incubator stuff
+* [Trivial] Remove executable privilege of doc/source/conf.py
+
 1.6.2
 -----
 
@@ -10,6 +25,9 @@ CHANGES
 -----
 
 * handle deleted notes properly
+* make the cache command write to a file by default
+* use the cache file instead of scanner when possible
+* add 'cache' command to write a cache file
 * refactor argument buildup to make it more reusable
 * improve test coverage
 * always show coverage report for test runs
