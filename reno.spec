@@ -4,7 +4,7 @@
 #
 Name     : reno
 Version  : 1.8.0
-Release  : 11
+Release  : 12
 URL      : http://pypi.debian.net/reno/reno-1.8.0.tar.gz
 Source0  : http://pypi.debian.net/reno/reno-1.8.0.tar.gz
 Summary  : RElease NOtes manager
