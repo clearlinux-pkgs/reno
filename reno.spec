@@ -4,7 +4,7 @@
 #
 Name     : reno
 Version  : 1.8.0
-Release  : 14
+Release  : 15
 URL      : http://pypi.debian.net/reno/reno-1.8.0.tar.gz
 Source0  : http://pypi.debian.net/reno/reno-1.8.0.tar.gz
 Summary  : RElease NOtes manager
@@ -12,10 +12,16 @@ Group    : Development/Tools
 License  : Apache-2.0
 Requires: reno-bin
 Requires: reno-python
+Requires: Babel
+Requires: PyYAML
+Requires: Sphinx
+Requires: pbr
 BuildRequires : Babel-python
 BuildRequires : PyYAML-python
+BuildRequires : configparser-python
 BuildRequires : coverage-python
 BuildRequires : discover-python
+BuildRequires : enum34-python
 BuildRequires : extras
 BuildRequires : extras-python
 BuildRequires : hacking
@@ -56,8 +62,6 @@ bin components for the reno package.
 %package python
 Summary: python components for the reno package.
 Group: Default
-Requires: Babel-python
-Requires: PyYAML-python
 
 %description python
 python components for the reno package.
@@ -68,13 +72,15 @@ python components for the reno package.
 
 %build
 export LANG=C
+export SOURCE_DATE_EPOCH=1489036932
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
+export SOURCE_DATE_EPOCH=1489036932
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot}
-python3 -tt setup.py build -b py3 install --root=%{buildroot}
+python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
+python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
 
 %files
 %defattr(-,root,root,-)
