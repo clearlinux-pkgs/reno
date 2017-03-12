@@ -1,27 +1,2 @@
-Babel-python
-coverage-python
-discover-python
-extras
-extras-python
-hacking
-oslosphinx-python
-oslotest-python
-pbr
-pip
-pluggy
-py-python
-pytest
-python3-dev
-python-dev
-python-mimeparse-python
-pytz-python
-PyYAML-python
-setuptools
-testrepository-python
-testscenarios
-testtools
-testtools-python
-tox
-traceback2-python
-unittest2-python
-virtualenv
+# This file contains additional build requirements that did not get
+# picked up automatically. One name per line, no whitespace.
