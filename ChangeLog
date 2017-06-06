@@ -1,6 +1,28 @@
 CHANGES
 =======
 
+2.3.2
+-----
+
+* Document how reno handles eol branches in config
+* do not assume the current branch is the most recent
+* fix the way we handle deleted notes
+
+2.3.1
+-----
+
+* Make oslosphinx requirement optional
+* Remove oslotest from test-requirements.txt
+* fix the logic for deciding what to show as the "current" series
+
+2.3.0
+-----
+
+* add release note for log level fix
+* lower the log level for an error message
+* do not use sphinx 1.6.1
+* add a lint command
+
 2.2.1
 -----
 
