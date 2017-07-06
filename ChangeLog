@@ -1,9 +1,19 @@
 CHANGES
 =======
 
+2.4.1
+-----
+
+* fix an infinite loop in the topo traversal algorithm
+
+2.4.0
+-----
+
+
 2.3.2
 -----
 
+* ignore null-merges
 * Document how reno handles eol branches in config
 * do not assume the current branch is the most recent
 * fix the way we handle deleted notes
