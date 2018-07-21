@@ -4,7 +4,7 @@
 #
 Name     : reno
 Version  : 2.4.1
-Release  : 21
+Release  : 22
 URL      : http://pypi.debian.net/reno/reno-2.4.1.tar.gz
 Source0  : http://pypi.debian.net/reno/reno-2.4.1.tar.gz
 Summary  : RElease NOtes manager
