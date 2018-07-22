@@ -1,14 +1,89 @@
 CHANGES
 =======
 
+2.9.2
+-----
+
+* preserve the order of tags when reading the cache file
+
+2.9.1
+-----
+
+* include the branch name in anchors to make them more unique
+* report when loading data from the cache file
+
+2.9.0
+-----
+
+* Streamline published release notes
+* Collapse Unreleased and Mainline sections
+* Make section titles have stable anchor links
+* Integrate a setuptools command
+* Enhance the travis hack
+
+2.8.0
+-----
+
+* add unreleased\_version\_title configuration option
+* Add usage with travis CI to docs
+* cleanups for dev workflow descriptions
+* doc: Note development workflows supported by reno
+* update bug report URLs to use storyboard
+* Update links in README
+* Update url in HACKING.rst
+* trivial change to contributing instructions
+
+2.7.0
+-----
+
+* support scanning closed stable branches
+* improve output messages
+* add an internal sphinx extension to show the configuration defaults
+* define options with help text
+
+2.6.0
+-----
+
+* add release note for scanner fix
+* update bindep list
+* remove some duplication in ChangeTracker
+* ignore changes until the file is added within the scanned range
+* fix release note markup
+* Add option to create release note from user-provided template
+
+2.5.1
+-----
+
+* release note for zuulv3 fix
+* update ref search logic for zuulv3 CI layout
+* requirements: Stop requiring a specific pbr version
+* Add user details for editing stable branch notes
+
+2.5.0
+-----
+
+* Clean up rendered HTML with openstackdocstheme
+* Update documention link for doc migration
+* Allow users to change prelude section name
+* loader: Extract cache filename from config object
+* Support repodir config files
+* switch from oslosphinx to openstackdocstheme
+* rearrange the existing docs to follow the new standard layout
+* Block comment should start with '# '
+* Replace http with https
+* Move notesdir default to 'defaults' module
+
 2.4.1
 -----
 
 * fix an infinite loop in the topo traversal algorithm
+* add option for ignoring some notes files
 
 2.4.0
 -----
 
+* expand examples in documentation
+* allow release notes sections to be single strings
 
 2.3.2
 -----
@@ -17,6 +92,7 @@ CHANGES
 * Document how reno handles eol branches in config
 * do not assume the current branch is the most recent
 * fix the way we handle deleted notes
+* Remove Babel from setup.cfg and requirements
 
 2.3.1
 -----
