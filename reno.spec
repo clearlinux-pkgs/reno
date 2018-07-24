@@ -4,7 +4,7 @@
 #
 Name     : reno
 Version  : 2.9.2
-Release  : 24
+Release  : 25
 URL      : https://files.pythonhosted.org/packages/83/cb/e76c5c678decc0cb28f3b8e29dea7c324ef67a2b69898dfb6fc16d2b41d3/reno-2.9.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/83/cb/e76c5c678decc0cb28f3b8e29dea7c324ef67a2b69898dfb6fc16d2b41d3/reno-2.9.2.tar.gz
 Summary  : RElease NOtes manager
@@ -18,7 +18,9 @@ Requires: PyYAML
 Requires: Sphinx
 Requires: coverage
 Requires: docutils
+Requires: dulwich
 Requires: hacking
+Requires: openstackdocstheme
 Requires: pbr
 Requires: python-mock
 Requires: python-subunit
@@ -27,6 +29,7 @@ Requires: testrepository
 Requires: testscenarios
 Requires: testtools
 BuildRequires : buildreq-distutils3
+BuildRequires : dulwich
 BuildRequires : pbr
 BuildRequires : pip
 BuildRequires : python3-dev
@@ -80,7 +83,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532291463
+export SOURCE_DATE_EPOCH=1532397249
 python3 setup.py build -b py3
 
 %install
