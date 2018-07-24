@@ -4,7 +4,7 @@
 #
 Name     : reno
 Version  : 2.9.2
-Release  : 25
+Release  : 26
 URL      : https://files.pythonhosted.org/packages/83/cb/e76c5c678decc0cb28f3b8e29dea7c324ef67a2b69898dfb6fc16d2b41d3/reno-2.9.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/83/cb/e76c5c678decc0cb28f3b8e29dea7c324ef67a2b69898dfb6fc16d2b41d3/reno-2.9.2.tar.gz
 Summary  : RElease NOtes manager
@@ -83,7 +83,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532397249
+export SOURCE_DATE_EPOCH=1532452883
 python3 setup.py build -b py3
 
 %install
