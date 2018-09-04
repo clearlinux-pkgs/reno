@@ -1,6 +1,20 @@
 CHANGES
 =======
 
+2.10.0
+------
+
+* Allow tags prefixed with v in default regex
+* move package publishing template back to project-config
+* fix documentation project template
+* Fix traceback when no args are passed to reno
+* sphinxext: Use 'sphinx.util.logging'
+* switch doc and pypi jobs to use python3
+* import zuul job settings from project-config
+* fix tox python3 overrides
+* report line numbers for generated content more accurately
+* tests: Use mock decorator instead of context manager
+
 2.9.2
 -----
 

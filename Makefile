@@ -1,5 +1,5 @@
 PKG_NAME := reno
-URL = https://files.pythonhosted.org/packages/83/cb/e76c5c678decc0cb28f3b8e29dea7c324ef67a2b69898dfb6fc16d2b41d3/reno-2.9.2.tar.gz
+URL = https://files.pythonhosted.org/packages/bd/94/0649bd5d2d69f01911c9fef8fccca23242101632daaf3667393bf93d2924/reno-2.10.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
