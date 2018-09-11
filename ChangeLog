@@ -1,6 +1,17 @@
 CHANGES
 =======
 
+2.11.0
+------
+
+* Use unicode for debug string
+* link to the europython 2018 presentation about reno
+* build our docs with the lower-constraints
+* update sphinx to at least 1.6.1
+* move sphinx flags to tox.ini
+* add lower-constraints tox environment and job
+* Migrate the link of bug report button to storyboard
+
 2.10.0
 ------
 
