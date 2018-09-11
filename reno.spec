@@ -4,7 +4,7 @@
 #
 Name     : reno
 Version  : 2.11.0
-Release  : 29
+Release  : 30
 URL      : https://files.pythonhosted.org/packages/b6/9d/77335244c21d543dfdc8a3c170d0c4f33862a83a9defc9758cc21a22fd1f/reno-2.11.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/b6/9d/77335244c21d543dfdc8a3c170d0c4f33862a83a9defc9758cc21a22fd1f/reno-2.11.0.tar.gz
 Summary  : RElease NOtes manager
@@ -80,7 +80,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1536678924
+export SOURCE_DATE_EPOCH=1536681024
 python3 setup.py build -b py3
 
 %install
