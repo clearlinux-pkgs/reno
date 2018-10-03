@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+2.11.1
+------
+
+* build universal wheels
+* update the oudated URL in doc
+* sphinxext: Use unicode\_literals
+
 2.11.0
 ------
 
