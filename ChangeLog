@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+2.11.2
+------
+
+* only override config values from command line if they are actually set
+* refactor handling of missing config files for better testing
+* update test fixtures to capture log output
+
 2.11.1
 ------
 
