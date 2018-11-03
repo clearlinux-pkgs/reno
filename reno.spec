@@ -4,16 +4,16 @@
 #
 Name     : reno
 Version  : 2.11.2
-Release  : 32
+Release  : 33
 URL      : https://files.pythonhosted.org/packages/18/a4/5bd8f42a4b6e0b678dc6c4f2c7c660b54675ef9ec3e75da9d752f1e346a4/reno-2.11.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/18/a4/5bd8f42a4b6e0b678dc6c4f2c7c660b54675ef9ec3e75da9d752f1e346a4/reno-2.11.2.tar.gz
 Summary  : RElease NOtes manager
 Group    : Development/Tools
 License  : Apache-2.0
-Requires: reno-bin
-Requires: reno-python3
-Requires: reno-license
-Requires: reno-python
+Requires: reno-bin = %{version}-%{release}
+Requires: reno-license = %{version}-%{release}
+Requires: reno-python = %{version}-%{release}
+Requires: reno-python3 = %{version}-%{release}
 Requires: PyYAML
 Requires: Sphinx
 Requires: docutils
@@ -72,13 +72,13 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1539274400
+export SOURCE_DATE_EPOCH=1541278121
 python3 setup.py build
 
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/reno
-cp LICENSE %{buildroot}/usr/share/doc/reno/LICENSE
+mkdir -p %{buildroot}/usr/share/package-licenses/reno
+cp LICENSE %{buildroot}/usr/share/package-licenses/reno/LICENSE
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -93,7 +93,7 @@ echo ----[ mark ]----
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/doc/reno/LICENSE
+/usr/share/package-licenses/reno/LICENSE
 
 %files python
 %defattr(-,root,root,-)
