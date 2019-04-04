@@ -1,6 +1,17 @@
 CHANGES
 =======
 
+2.11.3
+------
+
+* add python 3.7 unit test job
+* Change openstack-dev to openstack-discuss
+* Add cover job
+* Add python 3.6 unit test job
+* Update the min version of tox to 2.0
+* Switch to use stestr for unit test
+* Update sphinx extension logging
+
 2.11.2
 ------
 
